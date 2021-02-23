@@ -1,0 +1,68 @@
+Testing on training data:
+Original Accuracy:       1.0
+Pruned Accuracy:         1.0
+
+Testing on test data:
+Original Accuracy:       1.0
+Pruned Accuracy:         1.0
+
+Testing on validation data:
+Original Accuracy:       1.0
+Pruned Accuracy:         1.0
+
+Original Tree
+
+
+{'ODOR': {'ALMOND': 'EDIBLE',
+          'ANISE': 'EDIBLE',
+          'CREOSOTE': 'POISONOUS',
+          'FISHY': 'POISONOUS',
+          'FOUL': 'POISONOUS',
+          'MUSTY': 'POISONOUS',
+          'NONE': {'S-P-COL': {'BLACK': 'EDIBLE',
+                               'BROWN': 'EDIBLE',
+                               'BUFF': 'EDIBLE',
+                               'CHOCOLATE': 'EDIBLE',
+                               'GREEN': 'POISONOUS',
+                               'ORANGE': 'EDIBLE',
+                               'WHITE': {'HAB': {'GRASSES': 'EDIBLE',
+                                                 'LEAVES': {'C-COL': {'BROWN': 'EDIBLE',
+                                                                      'CINNAMON': 'EDIBLE',
+                                                                      'WHITE': 'POISONOUS',
+                                                                      'YELLOW': 'POISONOUS'}},
+                                                 'PATHS': 'EDIBLE',
+                                                 'WASTE': 'EDIBLE',
+                                                 'WOODS': {'G-SIZE': {'BROAD': 'EDIBLE',
+                                                                      'NARROW': 'POISONOUS'}}}},
+                               'YELLOW': 'EDIBLE'}},
+          'PUNGENT': 'POISONOUS',
+          'SPICY': 'POISONOUS'}}
+
+
+Pruned Tree
+
+
+{'ODOR': {'ALMOND': 'EDIBLE',
+          'ANISE': 'EDIBLE',
+          'CREOSOTE': 'POISONOUS',
+          'FISHY': 'POISONOUS',
+          'FOUL': 'POISONOUS',
+          'MUSTY': 'POISONOUS',
+          'NONE': {'S-P-COL': {'BLACK': 'EDIBLE',
+                               'BROWN': 'EDIBLE',
+                               'BUFF': 'EDIBLE',
+                               'CHOCOLATE': 'EDIBLE',
+                               'GREEN': 'POISONOUS',
+                               'ORANGE': 'EDIBLE',
+                               'WHITE': {'HAB': {'GRASSES': 'EDIBLE',
+                                                 'LEAVES': {'C-COL': {'BROWN': 'EDIBLE',
+                                                                      'CINNAMON': 'EDIBLE',
+                                                                      'WHITE': 'POISONOUS',
+                                                                      'YELLOW': 'POISONOUS'}},
+                                                 'PATHS': 'EDIBLE',
+                                                 'WASTE': 'EDIBLE',
+                                                 'WOODS': {'G-SIZE': {'BROAD': 'EDIBLE',
+                                                                      'NARROW': 'POISONOUS'}}}},
+                               'YELLOW': 'EDIBLE'}},
+          'PUNGENT': 'POISONOUS',
+          'SPICY': 'POISONOUS'}}

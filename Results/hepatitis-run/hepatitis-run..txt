@@ -1,0 +1,59 @@
+Testing on training data:
+Original Accuracy:       0.8467741935483871
+Pruned Accuracy:         0.75
+
+Testing on test data:
+Original Accuracy:       0.8125
+Pruned Accuracy:         0.8125
+
+Testing on validation data:
+Original Accuracy:       0.6666666666666666
+Pruned Accuracy:         0.8
+
+Original Tree
+
+
+{'ASCITES': {'1': 2,
+             '2': {'BILIRUBIN': {1: {'PROTIME': {1: 2,
+                                                 2: 2,
+                                                 3: 2,
+                                                 4: {'HISTOLOGY': {1: 2,
+                                                                   2: {'ANOREXIA': {'1': 2,
+                                                                                    '2': {'LIVER-F': {'1': {'SEX': {1: {'ANTIVIRALS': {2: {'SPLEEN-P': {'2': {'VARICES': {'2': 2}}}}}}}},
+                                                                                                      '2': 2}}}}}},
+                                                 '?': {'FATIGUE': {'1': {'LIVER-B': {'1': {'STEROID': {'1': 2,
+                                                                                                       '2': 1}},
+                                                                                     '2': {'SPIDERS': {'1': {'MALAISE': {'1': 2,
+                                                                                                                         '2': {'ALBUMIN': {1: 1,
+                                                                                                                                           2: 2}}}},
+                                                                                                       '2': 2}},
+                                                                                     '?': 1}},
+                                                                   '2': 2}}}},
+                                 2: {'SGOT': {1: 2, 2: {'AGE': {1: 2, 2: 1}}}},
+                                 3: 1,
+                                 4: 1,
+                                 '?': 2}},
+             '?': {'ALK-P': {1: 2, 2: 1, '?': 2}}}}
+
+
+Pruned Tree
+
+
+{'ASCITES': {'1': 2,
+             '2': {'BILIRUBIN': {1: {'PROTIME': {1: 2,
+                                                 2: 2,
+                                                 3: 2,
+                                                 4: {'HISTOLOGY': {1: 2,
+                                                                   2: {'ANOREXIA': {'1': 2,
+                                                                                    '2': {'LIVER-F': {'1': 2,
+                                                                                                      '2': 2}}}}}},
+                                                 '?': {'FATIGUE': {'1': {'LIVER-B': {'1': 1,
+                                                                                     '2': {'SPIDERS': {'1': 1,
+                                                                                                       '2': 2}},
+                                                                                     '?': 1}},
+                                                                   '2': 2}}}},
+                                 2: 1,
+                                 3: 1,
+                                 4: 1,
+                                 '?': 2}},
+             '?': 2}}
